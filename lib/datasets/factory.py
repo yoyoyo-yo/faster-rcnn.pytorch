@@ -18,6 +18,11 @@ from datasets.vg import vg
 
 import numpy as np
 
+from datasets.my_dataset import my_dataset
+
+split = 'train'
+__sets['gotobun_train'] = (lambda split=split: my_dataset(split, '/home/usrs/nagayosi/Gotobun/Dataset/'))
+
 # Set up voc_<year>_<split>
 for year in ['2007', '2012']:
   for split in ['train', 'val', 'trainval', 'test']:
