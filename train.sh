@@ -6,5 +6,5 @@ python trainval_net_my.py \
   --bs 1 \
   --nw 1 \
   --lr 0.001 \
-  --lr_decay_step 1e10 \
+  --lr_decay_step 1000000 \
   --cuda
